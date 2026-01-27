@@ -1,8 +1,3 @@
-/* ==========================================
-   ULTIMATE PORTFOLIO - JAVASCRIPT
-   Interactive features & animations
-   ========================================== */
-
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', () => {
     initializePortfolio();
@@ -22,9 +17,7 @@ function initializePortfolio() {
     initParallaxShapes();
 }
 
-/* ===================
-   Custom Cursor
-=================== */
+
 function initCustomCursor() {
     const cursor = document.getElementById('cursor');
     const follower = document.getElementById('cursorFollower');
@@ -78,9 +71,6 @@ function initCustomCursor() {
     }
 }
 
-/* ===================
-   Navigation
-=================== */
 function initNavigation() {
     const header = document.querySelector('.header');
     const navToggle = document.querySelector('.nav-toggle');
@@ -194,9 +184,6 @@ function initTypingEffect() {
     setTimeout(type, 1000);
 }
 
-/* ===================
-   Counter Animation
-=================== */
 function initCounterAnimation() {
     const counters = document.querySelectorAll('.stat-number');
     
@@ -233,9 +220,6 @@ function initCounterAnimation() {
     counters.forEach(counter => observer.observe(counter));
 }
 
-/* ===================
-   Skill Tabs
-=================== */
 function initSkillTabs() {
     const tabBtns = document.querySelectorAll('.tab-btn');
     const skillsGrids = document.querySelectorAll('.skills-grid');
@@ -280,9 +264,9 @@ function animateSkillBars(container) {
     });
 }
 
-/* ===================
-   Project Filter
-=================== */
+
+   //Project Filter
+
 function initProjectFilter() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
@@ -317,9 +301,9 @@ function initProjectFilter() {
     });
 }
 
-/* ===================
-   Scroll Animations
-=================== */
+
+   //Scroll Animations
+
 function initScrollAnimations() {
     const revealElements = document.querySelectorAll('.reveal');
     
@@ -339,9 +323,8 @@ function initScrollAnimations() {
     revealElements.forEach(el => observer.observe(el));
 }
 
-/* ===================
-   Form Handler
-=================== */
+   //Form Handler
+
 function initFormHandler() {
     const form = document.getElementById('contactForm');
     if (!form) return;
@@ -561,9 +544,9 @@ function initParallaxShapes() {
     }
 }
 
-/* ===================
-   Smooth Scroll for Anchor Links
-=================== */
+
+   //Smooth Scroll for Anchor Links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -578,9 +561,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-/* ===================
-   Preloader (Optional)
-=================== */
+
+   //Preloader (Optional)
+
 window.addEventListener('load', () => {
     const preloader = document.querySelector('.preloader');
     if (preloader) {
