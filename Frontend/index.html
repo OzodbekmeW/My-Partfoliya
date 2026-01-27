@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ozodbek Tursunpulatov - Python Software Developer | Specializing in backend systems, AI/ML, and scalable applications">
+    <meta name="keywords" content="python developer, backend developer, machine learning, django, fastapi, data science, AI">
+    <meta property="og:title" content="Ozodbek Tursunpulatov - Python Software Developer">
+    <meta property="og:description" content="Building robust backend systems and AI-powered solutions with Python">
+    <meta property="og:type" content="website">
+    <title>Ozodbek Tursunpulatov | Python Software Developer</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">Ozodbek.dev</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu-list">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#experience" class="mobile-link">Experience</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for new projects</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name gradient-text">Ozodbek</span>
+                    <span class="title-surname">Tursunpulatov</span>
+                </h1>
+                <div class="hero-roles">
+                    <span class="role-text" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    I build robust backend systems and AI-powered solutions using Python. 
+                    Specializing in scalable applications, machine learning, and data-driven technologies.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="30">0</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <div class="image-placeholder">
+                                <span class="initials">OT</span>
+                            </div>
+                            <div class="image-glow"></div>
+                        </div>
+                        <div class="about-badges">
+                            <span class="badge">🐍 Python Expert</span>
+                            <span class="badge">🤖 AI/ML Engineer</span>
+                            <span class="badge">⚡ Backend Architect</span>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3 class="about-subtitle">Building Intelligent Backend Systems</h3>
+                        <p>
+                            I'm a passionate Python Software Developer based in Uzbekistan with over 5 years of experience 
+                            building robust backend systems and AI-powered applications. My journey in tech started with 
+                            Python and evolved into expertise in machine learning and scalable system architecture.
+                        </p>
+                        <p>
+                            I specialize in the Python ecosystem, working with Django, FastAPI, and TensorFlow 
+                            to build intelligent applications. I excel at creating efficient APIs, implementing 
+                            ML models in production, and designing data pipelines that handle millions of records.
+                        </p>
+                        <p>
+                            When I'm not coding, you'll find me experimenting with new ML frameworks, contributing to 
+                            open-source Python projects, or optimizing algorithms for better performance.
+                        </p>
+                        <div class="about-cta">
+                            <a href="#" class="btn btn-outline" download>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                <span>Download Resume</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="frontend">Python & Frameworks</button>
+                    <button class="tab-btn" data-tab="backend">AI/ML & Data</button>
+                    <button class="tab-btn" data-tab="tools">Tools & Cloud</button>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-grid active" id="frontend">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                            <span class="skill-exp">5 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                            </div>
+                            <h4>Django</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                            <span class="skill-exp">4 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                            </div>
+                            <h4>FastAPI</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                            <span class="skill-exp">3 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/></svg>
+                            </div>
+                            <h4>Flask</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                            <span class="skill-exp">4 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                            </div>
+                            <h4>SQLAlchemy</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="87"></div></div>
+                            <span class="skill-exp">4 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                            </div>
+                            <h4>Celery</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                            <span class="skill-exp">3 years</span>
+                        </div>
+                    </div>
+                    <div class="skills-grid" id="backend">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                            </div>
+                            <h4>TensorFlow</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                            <span class="skill-exp">3 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                            </div>
+                            <h4>PyTorch</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                            <span class="skill-exp">2 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                            </div>
+                            <h4>Pandas</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+                            <span class="skill-exp">4 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="12" rx="10" ry="6"/></svg>
+                            </div>
+                            <h4>NumPy</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                            <span class="skill-exp">4 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="18" height="18"/></svg>
+                            </div>
+                            <h4>Scikit-learn</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                            <span class="skill-exp">3 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            </div>
+                            <h4>Jupyter</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                            <span class="skill-exp">4 years</span>
+                        </div>
+                    </div>
+                    <div class="skills-grid" id="tools">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4"/></svg>
+                            </div>
+                            <h4>Git & GitHub</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                            <span class="skill-exp">5 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="2"/></svg>
+                            </div>
+                            <h4>Docker</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                            <span class="skill-exp">3 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                            </div>
+                            <h4>AWS</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                            <span class="skill-exp">3 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5"/></svg>
+                            </div>
+                            <h4>PostgreSQL</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                            <span class="skill-exp">4 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                            </div>
+                            <h4>Redis</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="78"></div></div>
+                            <span class="skill-exp">3 years</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>
+                            </div>
+                            <h4>Linux</h4>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                            <span class="skill-exp">4 years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ml">ML/AI</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="data">Data Science</button>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card" data-category="ml">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                <span>ML Recommendation Engine</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Live</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-number">01</span>
+                            <h3 class="project-title">ML Recommendation Engine</h3>
+                            <p class="project-description">
+                                Intelligent recommendation system using collaborative filtering and deep learning. 
+                                Increased user engagement by 45% with personalized content suggestions for 100K+ users.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Django</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="backend">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                <span>Analytics API</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Live</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-number">02</span>
+                            <h3 class="project-title">High-Performance Analytics API</h3>
+                            <p class="project-description">
+                                Scalable FastAPI backend processing 1M+ requests daily. Real-time data aggregation 
+                                with Redis caching, reducing response times by 80%.
+                            </p>
+                            <div class="project-tech">
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="data">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                <span>Data Pipeline</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Live</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-number">03</span>
+                            <h3 class="project-title">Real-time Data Pipeline</h3>
+                            <p class="project-description">
+                                Automated ETL pipeline processing 10TB+ daily data from multiple sources. 
+                                Built with Apache Airflow and Pandas for reliable data transformation.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Apache Airflow</span>
+                                <span>Pandas</span>
+                                <span>AWS S3</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ml">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                                <span>Image Classifier</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Live</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-number">04</span>
+                            <h3 class="project-title">Computer Vision Classifier</h3>
+                            <p class="project-description">
+                                Deep learning model for medical image classification with 94% accuracy. 
+                                Deployed CNN using PyTorch with real-time inference API serving 1K+ predictions daily.
+                            </p>
+                            <div class="project-tech">
+                                <span>PyTorch</span>
+                                <span>OpenCV</span>
+                                <span>FastAPI</span>
+                                <span>AWS EC2</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="backend">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                                <span>Django CMS</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Live</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-number">05</span>
+                            <h3 class="project-title">Enterprise Content Management</h3>
+                            <p class="project-description">
+                                Scalable Django-based CMS with multi-tenancy support. Advanced caching with Redis 
+                                and Celery background tasks for content processing and SEO optimization.
+                            </p>
+                            <div class="project-tech">
+                                <span>Django</span>
+                                <span>Celery</span>
+                                <span>Redis</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="ml">
+                        <div class="project-image">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);">
+                                <span>NLP Chatbot</span>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Live</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-number">06</span>
+                            <h3 class="project-title">Intelligent NLP Chatbot</h3>
+                            <p class="project-description">
+                                AI-powered customer service chatbot using transformers and BERT. 
+                                Handles 5000+ conversations daily with 89% resolution rate.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>BERT</span>
+                                <span>spaCy</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="company-logo">DV</div>
+                                <div class="timeline-info">
+                                    <h3>Senior Python Developer</h3>
+                                    <span class="company">Digital Ventures</span>
+                                    <span class="duration">2023 - Present</span>
+                                </div>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Architected ML pipeline processing 50M+ records daily with 99.9% reliability</li>
+                                <li>Led team of 6 engineers building scalable microservices using Django and FastAPI</li>
+                                <li>Reduced API response times by 75% through Redis caching and query optimization</li>
+                                <li>Implemented CI/CD pipelines with Docker and Kubernetes for automated deployments</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>AWS</span>
+                                <span>TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="company-logo">IL</div>
+                                <div class="timeline-info">
+                                    <h3>Python Backend Developer</h3>
+                                    <span class="company">InnovateLab</span>
+                                    <span class="duration">2021 - 2023</span>
+                                </div>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Built FastAPI-based analytics platform processing 10M+ API requests daily</li>
+                                <li>Developed recommendation engine using collaborative filtering, improving user engagement by 45%</li>
+                                <li>Implemented async Celery workers for background processing and email notifications</li>
+                                <li>Optimized PostgreSQL queries reducing database load by 60%</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                                <span>Celery</span>
+                                <span>Redis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="company-logo">TS</div>
+                                <div class="timeline-info">
+                                    <h3>Junior Python Developer</h3>
+                                    <span class="company">TechStart Inc.</span>
+                                    <span class="duration">2019 - 2021</span>
+                                </div>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Developed RESTful APIs using Flask serving 100K+ monthly active users</li>
+                                <li>Built data scraping tools with BeautifulSoup and Selenium for market analytics</li>
+                                <li>Automated reporting workflows saving 20+ hours weekly with Python scripts</li>
+                                <li>Contributed to unit testing achieving 85% code coverage</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>Pandas</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Build Something Amazing Together</h3>
+                        <p>
+                            I'm always interested in hearing about Python backend projects, ML/AI opportunities, 
+                            or data engineering challenges. Whether you need to discuss a project or just want to connect, feel free to reach out!
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:hello@ozodbek.dev">hello@ozodbek.dev</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span>Tashkent, Uzbekistan</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <a href="https://t.me" target="_blank" class="social-link" aria-label="Telegram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                                <span class="form-line"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                                <span class="form-line"></span>
+                            </div>
+                            <div class="form-group">
+                                <select id="projectType" name="projectType" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="web">Web Application</option>
+                                    <option value="mobile">Mobile App</option>
+                                    <option value="fullstack">Full Stack Project</option>
+                                    <option value="consulting">Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="projectType">Project Type</label>
+                                <span class="form-line"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                                <span class="form-line"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading">
+                                    <svg class="spinner" width="24" height="24" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="60" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <span class="btn-success">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Ozodbek.dev</span>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="18 15 12 9 6 15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ozodbek Tursunpulatov. All rights reserved.</p>
+                <p class="made-with">Made with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
