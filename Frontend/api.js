@@ -28,11 +28,6 @@ async function apiCall(endpoint, options = {}) {
     }
 }
 
-// ============================================
-// API FUNCTIONS
-// ============================================
-
-// Contact Form
 export async function sendContactForm(formData) {
     return await apiCall('/contact', {
         method: 'POST',
