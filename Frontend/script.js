@@ -229,23 +229,23 @@ function initSkillTabs() {
         btn.addEventListener('click', () => {
             const tab = btn.getAttribute('data-tab');
             
-            // Update button states
+            // tugmalarni yangilash
             tabBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             
-            // Show corresponding grid
+            // tegishli gridni ko'rsatish
             skillsGrids.forEach(grid => {
                 grid.classList.remove('active');
-                if (grid.id === `${tab}-skills`) {
+                if (grid.getAttribute('data-tab') === tab) {
                     grid.classList.add('active');
-                    // Animate skill bars
+                    // skill barlarni animatsiya qilish
                     animateSkillBars(grid);
                 }
             });
         });
     });
     
-    // Animate first tab on load
+    // birinchi tabni avtomatik animatsiya qilish
     const firstActiveGrid = document.querySelector('.skills-grid.active');
     if (firstActiveGrid) {
         setTimeout(() => animateSkillBars(firstActiveGrid), 500);
