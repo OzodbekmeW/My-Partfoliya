@@ -877,7 +877,19 @@
                         </div>
                     </div>
                     <div class="contact-form-wrapper">
-                        <form class="contact-form" id="contactForm">
+                        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Web3Forms Access Key - O'zingiznikini web3forms.com dan oling -->
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            
+                            <!-- Optional: Redirect after submission -->
+                            <input type="hidden" name="redirect" value="https://ozodbek.dev/thank-you">
+                            
+                            <!-- Optional: Custom subject -->
+                            <input type="hidden" name="subject" value="Portfolio Contact Form - New Message">
+                            
+                            <!-- Optional: From name -->
+                            <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                            
                             <div class="form-group">
                                 <input type="text" id="name" name="name" required placeholder=" ">
                                 <label for="name">Your Name</label>
@@ -889,13 +901,13 @@
                                 <span class="form-line"></span>
                             </div>
                             <div class="form-group">
-                                <select id="projectType" name="projectType" required>
+                                <select id="projectType" name="project_type" required>
                                     <option value="" disabled selected></option>
-                                    <option value="web">Web Application</option>
-                                    <option value="mobile">Mobile App</option>
-                                    <option value="fullstack">Full Stack Project</option>
-                                    <option value="consulting">Consulting</option>
-                                    <option value="other">Other</option>
+                                    <option value="Web Application">Web Application</option>
+                                    <option value="Mobile App">Mobile App</option>
+                                    <option value="Full Stack Project">Full Stack Project</option>
+                                    <option value="Consulting">Consulting</option>
+                                    <option value="Other">Other</option>
                                 </select>
                                 <label for="projectType">Project Type</label>
                                 <span class="form-line"></span>
@@ -905,6 +917,10 @@
                                 <label for="message">Your Message</label>
                                 <span class="form-line"></span>
                             </div>
+                            
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            
                             <button type="submit" class="btn btn-primary btn-submit">
                                 <span class="btn-text">Send Message</span>
                                 <span class="btn-loading">

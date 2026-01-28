@@ -335,13 +335,14 @@ function initFormHandler() {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        // Validate form
-        const name = form.querySelector('#name').value.trim();
-        const email = form.querySelector('#email').value.trim();
-        const subject = form.querySelector('#subject').value;
-        const message = form.querySelector('#message').value.trim();
+        const formData = new FormData(form);
         
-        if (!name || !email || !subject || !message) {
+        // validatsiya
+        const name = formData.get('name')?.trim();
+        const email = formData.get('email')?.trim();
+        const message = formData.get('message')?.trim();
+        
+        if (!name || !email || !message) {
             showNotification('Iltimos, barcha maydonlarni to\'ldiring.', 'error');
             return;
         }
@@ -351,48 +352,39 @@ function initFormHandler() {
             return;
         }
         
-        // Show loading state
+        // yuborilayotganini ko'rsatish
         submitBtn.classList.add('loading');
+        submitBtn.disabled = true;
         
         try {
-            // Send to Django Backend API
-            const response = await fetch('http://127.0.0.1:8000/api/contact/send/', {
+            const response = await fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    name: name,
-                    email: email,
-                    subject: subject,
-                    message: message
-                })
+                body: formData
             });
             
             const data = await response.json();
             
             if (response.ok && data.success) {
-                // Success
+                // muvaffaqiyatli yuborildi
                 submitBtn.classList.remove('loading');
                 submitBtn.classList.add('success');
                 
-                showNotification(data.message || 'Xabar muvaffaqiyatli yuborildi!', 'success');
+                showNotification('Xabar muvaffaqiyatli yuborildi! Tez orada javob beraman.', 'success');
                 form.reset();
                 
                 setTimeout(() => {
                     submitBtn.classList.remove('success');
+                    submitBtn.disabled = false;
                 }, 3000);
             } else {
-                // Backend returned error
-                submitBtn.classList.remove('loading');
-                const errorMsg = data.message || 'Xatolik yuz berdi. Qaytadan urinib ko\'ring.';
-                showNotification(errorMsg, 'error');
+                throw new Error(data.message || 'Xatolik yuz berdi');
             }
             
         } catch (error) {
             submitBtn.classList.remove('loading');
+            submitBtn.disabled = false;
             console.error('Error:', error);
-            showNotification('Backend bilan bog\'lanishda xatolik. Server ishga tushganligini tekshiring.', 'error');
+            showNotification('Xatolik yuz berdi. Qaytadan urinib ko\'ring.', 'error');
         }
     });
 }
