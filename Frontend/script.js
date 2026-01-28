@@ -15,6 +15,7 @@ function initializePortfolio() {
     initFormHandler();
     initBackToTop();
     initParallaxShapes();
+    initCertificateModal();
 }
 
 
@@ -560,6 +561,53 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Certificate Modal
+function initCertificateModal() {
+    const modal = document.getElementById('certificateModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalIssuer = document.getElementById('modalIssuer');
+    const modalClose = document.getElementById('modalClose');
+    const modalOverlay = document.getElementById('modalOverlay');
+    
+    if (!modal) return;
+    
+    // sertifikat kartochkalariga bosilganda
+    document.querySelectorAll('.certificate-view-btn').forEach((btn, index) => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const card = btn.closest('.certificate-card');
+            const img = card.querySelector('.certificate-image');
+            const title = card.querySelector('.certificate-title');
+            const issuer = card.querySelector('.certificate-issuer');
+            
+            modalImage.src = img.src;
+            modalImage.alt = img.alt;
+            modalTitle.textContent = title.textContent;
+            modalIssuer.textContent = issuer.textContent;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    // modalni yopish
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+    
+    // ESC tugmasi bilan yopish
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+}
 
 
    //Preloader (Optional)
